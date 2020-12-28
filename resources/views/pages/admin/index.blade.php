@@ -21,7 +21,7 @@
                                     @foreach($users as $user)
                                         <tr>
                                             @if ( $user->roles()->get()->pluck('name')->toArray() !== ["admin"])
-                                            <td>{{ $user->id - 2}}</td>
+                                            <td>{{ $user->id - 1}}</td>
                                             <td>{{ $user->email }}</td>
                                             <td>{{ $user->name }}</td>
                                             <td>

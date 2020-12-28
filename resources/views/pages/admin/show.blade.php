@@ -27,7 +27,7 @@
                                 <tbody>
                                     @foreach($profiles as $profile)
                                         <tr>
-                                            <td>{{ $profile->id - 1}}</td>
+                                            <td>{{ $profile->id }}</td>
                                             <td>{{ $profile->name }}</td>
                                             <td>{{ $profile->mssv }}</td>
                                             @foreach($gts as $gt)

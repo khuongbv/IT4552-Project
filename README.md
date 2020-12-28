@@ -20,6 +20,7 @@ DB_USERNAME=Database_username
 DB_PASSWORD=Database_password
 
 - Chuyển đến thư mục project bằng lệnh command, trong command nhập php artisan serve để chạy project
+- Chạy lệnh php artisan migrate:refresh  để tạo các bảng trong database
 - Chạy lệnh php artisan db:seed  để tạo dữ liệu test
 
 ## Tài khoản test
@@ -27,6 +28,7 @@ DB_PASSWORD=Database_password
 Admin: admin@gmail.com   password: 123456789
 User: user@gmail.com     password: 123456789
 
+- Số người hiện tại của phòng 101 khu B1 là 3 chỉ là số liệu để test, không có thông tin sinh viên nào trong này cả
 
 ## License
 
