@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    @if (Session::get('ttsv') === null)
-        <script>window.location = "/user/profile/create";</script>
-    @endif
     <div class="content">
         <div class="container">
             @if(isset($room))

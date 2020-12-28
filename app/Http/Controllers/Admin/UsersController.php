@@ -9,6 +9,7 @@ use Gate;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Profile;
 use Illuminate\Support\Facades\DB;
+use App\Models\RoomRegistration;
 
 
 class UsersController extends Controller
@@ -108,11 +109,14 @@ class UsersController extends Controller
         if (Gate::denies('admin')) {
             return back();
         }
+        $room_info = RoomRegistration::where('name', $user->name)->first();
         $ttsv = Profile::where('id', $user->id - 1)->first();
+        $room_info->name = $request->name;
         $ttsv->name = $request->name;
         $ttsv->email = $request->email;
         $user->name = $request->name;
         $user->email = $request->email;
+        $room_info->save();
         $ttsv->save();
         $user->save() ?  
             $request->session()->flash('success', 'User updated successfully') : 

@@ -28,7 +28,13 @@
                     <td>
                         @foreach($ttphong as $t)
                             @if($t->id==$l->room_id)
-                                {{$t->room_number}}
+                                @if($t->area_id==1)
+                                    B1-{{$t->room_number}}
+                                @elseif($t->area_id==2)
+                                    B2-{{$t->room_number}}
+                                @else
+                                    B3-{{$t->room_number}}
+                                @endif
                             @endif
                         @endforeach
                     </td>

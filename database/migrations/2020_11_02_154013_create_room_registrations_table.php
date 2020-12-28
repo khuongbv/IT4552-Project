@@ -18,7 +18,7 @@ class CreateRoomRegistrationsTable extends Migration
             $table->bigInteger('room_id')->unsigned();
             $table->foreign('room_id')->references('id')->on('rooms')->onDelete('cascade');
             $table->integer('mssv');
-            $table->foreign('mssv')->references('mssv')->on('profiles')->onDelete('cascade');
+            $table->foreign('mssv')->references('mssv')->on('profiles')->onDelete('cascade')->onUpdate('cascade');
             $table->string('name');
             $table->string('status');
             $table->integer('cost');

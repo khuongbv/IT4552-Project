@@ -99,7 +99,7 @@ class ManagerController extends Controller
         ])->update(['current_numbers' => $current_numbers]);
         RoomRegistration::where([
            ['mssv',$mssv] 
-        ])->update(['status'=>'cancelled']);
+        ])->update(['status'=>'Hủy']);
         return redirect()->back();
     }
     // public function manager_search () {

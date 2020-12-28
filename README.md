@@ -19,9 +19,10 @@ DB_DATABASE=Database_name
 DB_USERNAME=Database_username
 DB_PASSWORD=Database_password
 
-- Chuyển đến thư mục project bằng lệnh command, trong command nhập php artisan serve để chạy project
+- Chuyển đến thư mục project bằng lệnh command, trong command chạy lệnh composer install
 - Chạy lệnh php artisan migrate:refresh  để tạo các bảng trong database
 - Chạy lệnh php artisan db:seed  để tạo dữ liệu test
+- Nhập php artisan serve để chạy project
 
 ## Tài khoản test
 
