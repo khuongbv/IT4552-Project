@@ -26,7 +26,6 @@ class ValidateProfile extends FormRequest
             'mssv'  =>  'required|numeric|min:8|unique:profiles',
             'sdt' =>  'required|numeric|min:10',
             'qq' =>  'required|string',
-            'image' =>  'required|image|max:2048',
             'khoa_id' => 'required',
             'gt_id' => 'required',
             'vien_id' => 'required',

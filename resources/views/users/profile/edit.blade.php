@@ -127,7 +127,7 @@
                                 <div class="file-field">
                                     <div class="btn btn-primary btn-sm float-left">
                                     <label for="image">Select files</label>
-                                    <input type="file" name="image" />
+                                    <input type="file" name="image" id="image" multiple/>
                                     <img src="{{ URL::to('/') }}/uploads/{{ $profile->image }}" class="img-thumbnail" width="100" />
                                     <input type="hidden" name="hidden_image" value="{{ $profile->image }}" />
                                     </div>
